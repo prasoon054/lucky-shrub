@@ -1,0 +1,126 @@
+body{
+    background-color: #edefee;
+    font-family: 'Noto Sans', serif;
+    margin: 0 5% 3rem 5%;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 10px;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px dashed #888888;
+    background-color: #edefee;
+}
+
+.hbox{
+    flex: 1;
+}
+
+section:nth-of-type(2) article{
+    border: 2px solid #888888;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: #e2df00;
+}
+
+section:nth-of-type(2) article:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+a:hover{
+    color: #66792f;
+}
+
+a:visited{
+    color: #b5106e;
+}
+
+header img{
+    display: block;
+    margin: 5px auto;
+    height: 5em;
+    max-height: 7.5em;
+    float: left;
+}
+
+#logo:hover{
+    animation: inc 2s infinite linear;
+}
+
+@keyframes inc {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none; /* Removes bullet point */
+    text-align: center;
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+    flex: 1;
+}
+
+header a{
+    text-decoration: none;
+    text-align: center;
+}
+
+section{
+    display: flex;
+}
+
+article{
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer div{
+    margin: 10px;
+    flex: 1;
+}
+
+footer img{
+    display: block;
+    float: right;
+}
+
+article p{
+    margin: 10px;
+    text-align: justify;
+}
