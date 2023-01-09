@@ -1,2 +1,2 @@
-# lucky-shrub
-Garden Designer
+# Lucky Shrub
+We provide service for designing gardens
