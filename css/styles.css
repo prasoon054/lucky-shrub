@@ -1,5 +1,6 @@
+/* element selectors */
 body{
-    background-color: #edefee;
+    background-color: #e6ffe6;
     font-family: 'Noto Sans', serif;
     margin: 0 5% 3rem 5%;
 }
@@ -15,86 +16,10 @@ h2{
 }
 
 header{
-    display: flex;
     padding: 10px;
     height: 100%;
     width: 100%;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    border-bottom: 2px dashed #888888;
-    background-color: #edefee;
-}
-
-.hbox{
-    flex: 1;
-}
-
-section:nth-of-type(2) article{
-    border: 2px solid #888888;
-    border-radius: 10px;
-    margin: 1rem;
-    background-color: #e2df00;
-}
-
-section:nth-of-type(2) article:hover{
-    transform: scale(1.1);
-    transition: transform 2s;
-}
-
-a:hover{
-    color: #66792f;
-}
-
-a:visited{
-    color: #b5106e;
-}
-
-header img{
-    display: block;
-    margin: 5px auto;
-    height: 5em;
-    max-height: 7.5em;
-    float: left;
-}
-
-#logo:hover{
-    animation: inc 2s infinite linear;
-}
-
-@keyframes inc {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-nav{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-nav ul{
-    list-style: none; /* Removes bullet point */
-    text-align: center;
-    display: flex;
-}
-
-nav li{
-    display: inline-block;
-    flex: 1;
-}
-
-header a{
-    text-decoration: none;
-    text-align: center;
+    background-color: #e6ffe6;
 }
 
 section{
@@ -110,6 +35,81 @@ footer{
     align-items: center;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px hidden;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, skyblue, #ff9d97);
+}
+
+hr{
+    margin: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: solid 4px #888888;
+}
+
+/* class / id selectors */
+.hbox{
+    flex: 1;
+}
+
+#logo{
+    display: block;
+    margin: 5px auto;
+    height: 10em;
+}
+
+/* pseudo selectors / descendant / others */
+section:nth-of-type(2) article{
+    border: 2px hidden;
+    border-radius: 30px;
+    margin: 1rem;
+    background-color: #ddff99;
+}
+
+section:nth-of-type(2) article:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+a:hover{
+    color: #009933;
+}
+
+a:visited{
+    color: #b5106e;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+    transition: transform 2s;
+}
+
+nav ul{
+    list-style: none; /* Removes bullet point */
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+    flex: 1;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+}
+
 footer div{
     margin: 10px;
     flex: 1;
@@ -117,7 +117,6 @@ footer div{
 
 footer img{
     display: block;
-    float: right;
 }
 
 article p{
